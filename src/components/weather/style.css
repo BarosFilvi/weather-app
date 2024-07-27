@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .weather-widget.day {
+    background-image: url('../../assets/images/bg_morning.png');
+    background-size: cover;
+    background-position: bottom;
+    transition: 0.4 ease-out;
+  }
+
+  .weather-widget.night {
+    background-image: url('../../assets/images/bg_night.png');
+    background-size: cover;
+    background-position: bottom;
+    transition: 0.4 ease-out;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 40px;
+    position: relative;
+  }
+
+  .top-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .location-temp-box .location {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  }
+
+    .location-temp-box .temp {
+        color: white;
+        font-size: 60px;
+        font-weight: 700;
+        text-align: left;
+        text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+    }
+
+    .temp-unit {
+        color: white;
+        font-size: 25px;
+        font-weight: 700;
+        text-align: left;
+        text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+    }
+
+    .weather-box .weather-ic.day {
+        width: 60px;
+        height: 60px;
+        background-size: cover;
+        background-position: bottom;
+        margin: 5px;
+        background-image: url('../../assets/images/sunny.png');
+    }
+
+    .weather-box .weather-ic.night {
+        width: 60px;
+        height: 60px;
+        background-size: cover;
+        background-position: bottom;
+        margin: 5px;
+        background-image: url('../../assets/images/moon.png');
+    }
+
+
+
+    .weather-box .weather {
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: left;
+        text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+    }
+
+    .middle-box {
+        color: white;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 350px;
+        text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+    }
+
+    .bottom-box {
+        display: flex;
+        margin-top: auto;
+    }
+
+    .bottom-box .weather-details{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .wind-details, .humidity-details, .temp-details{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .wind-details .wind-ic{
+        width: 40px;
+        height: 40px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 5px;
+        background-image: url('../../assets/images/wind.png');
+    }
+
+    .humidity-details .humidity-ic{
+        width: 40px;
+        height: 40px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 5px;
+        background-image: url('../../assets/images/humidity.png');
+    }
+
+    .temp-details .temp-ic{
+        width: 40px;
+        height: 40px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 5px;
+        background-image: url('../../assets/images/temperature.png');
+    }
+
+    .value, .temp-max, .temp-unit-max {
+        color: white;
+        font-size: 17px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 15px;
+        text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+    }
+
+    .temp-min {
+        color: white;
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 15px;
+        margin-left: 10px;
+        text-align: center;
+        text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+        opacity: 0.8;
+    }
+
+    .temp-unit-min {
+        color: white;
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 15px;
+        text-align: center;
+        text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+        opacity: 0.8;
+    }
+
